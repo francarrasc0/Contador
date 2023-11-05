@@ -1,0 +1,23 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    display: flex;
+    width: 950px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+h1{
+    color: rgb(43, 205, 226);
+}
+h1, p{
+    margin: 0;
+}
+
+.button{
+    padding: 5px 15px;
+    background-color: rgb(200, 238, 238);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contador de visitas</h1>
+        <p>Has visitado esta página <strong>{{ contador }}</strong> veces.</p>
+        <form method="GET" action="/aumentar">
+            <button class="button">Aumentar 2 visitas</button>
+        </form>
+        <form method="GET" action="/destroy/session">
+            <button class="button">Reiniciar contador</button>
+        </form>
+        <form method="POST" action="/aumento/personalizado">
+            <label for="aumento">Aumentar visitas en:</label>
+            <input type="number" name="aumento" id="aumento" value='1' min='1'>
+            <input type="submit" value="Incrementar" class="button">
+        </form>
+    </div>
+</body>
+
+</html>
